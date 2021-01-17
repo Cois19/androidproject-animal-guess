@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private String[] keys5 = {"D", "U", "C", "K", "R"};
     private String[] textAnswer = {"BIRD", "FISH", "GOAT", "LION", "DUCK"};
     private String newTextAnswer;
-    TextView textScreen, textQuestion, textTitle;
+    private TextView textScreen, textQuestion, textTitle;
     Animation smallbigforth;
 
     @Override

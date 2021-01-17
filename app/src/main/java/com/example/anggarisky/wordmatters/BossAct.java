@@ -12,9 +12,9 @@ import android.widget.TextView;
 
 public class BossAct extends AppCompatActivity {
 
-    TextView textScreen, textQuestion, textTitle, textBtn;
-    ImageView bigboss;
-    Animation smalltobig;
+    private TextView textScreen, textQuestion, textTitle, textBtn;
+    private ImageView bigboss;
+    private Animation smalltobig;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +43,11 @@ public class BossAct extends AppCompatActivity {
 
     public void onClick(View v) {
         Intent intent = new Intent(BossAct.this, MainActivity.class);
+        startActivity(intent);
+    }
+
+    public void onClick2(View v) {
+        Intent intent = new Intent(BossAct.this, MainMenu.class);
         startActivity(intent);
     }
 }
